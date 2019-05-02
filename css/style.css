@@ -1,0 +1,235 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color:  black;
+}
+
+/* Sección banner superior */
+.banner{
+	width: 100%;
+	color: #ff0066;
+	height: 375px;
+	border-bottom: 3px solid #ff0066;
+	background-image: url("../images/fondo-doodle.png");
+}
+
+.izquierda{
+	width: 50%;
+	float: left;
+}
+.yo-cv{
+    padding:10px 10px 10px 90px;
+	width: 100%;
+	max-width: 373px;
+}
+
+.derecha{
+	width: 50%;
+	float: left;
+}
+
+.head{
+	margin: 0 auto;
+	padding: 105px 10px;
+}
+.head .data {
+  -moz-transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+  transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+}
+.head .data:before{
+  color: #ff0066;
+  font-weight: 900;
+  font-size: 45px;
+  display: block;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  transition: inherit;
+}
+.head .data:before {
+  content: attr(data-bf);
+}
+.head .data:hover:before {
+  -moz-transform: translate(-25px, -15px);
+  -ms-transform: translate(-25px, -15px);
+  -o-transform: translate(-25px, -15px);
+  transform: translate(-25px, -15px);
+}
+.links{
+	text-decoration: none;
+	display: inline;
+	white-space: nowrap;
+	color: #ff0066;
+	font-size: px;
+	font-weight: normal;
+}
+
+/* Contenedor princpal */
+.container{
+	width: 90%;
+	margin: 0 auto;
+	height: 650px;
+}
+
+.principal{
+	width: 63%;
+	float: left;
+	padding: 5px 40px;
+}
+
+/* Dos columnas */
+.grid {
+  width: 100%;
+  display: table;
+  border-collapse:separate;
+  border-spacing:15px;
+}
+
+.col {
+  display: table-cell;
+	padding: 10px 0 20px 0;
+}
+
+section{
+	width: 27%;
+	float: left;
+	padding: 5px 20px;
+}
+
+/* Pie de página */
+.footer{
+	width: 100%;
+	background-color: #DADADA;
+	background-image: url("../images/fondo-doodle3.png");
+	color: #999;
+	padding: 3px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Media queries y responsive */
+
+@media (min-width:901px ) and (max-width: 1334px) {
+   .principal{
+	width: 60%;}
+	section{
+	width: 25%;	}
+	.yo-cv{
+	padding: 10px 10px 10px 50px;}
+	.banner{
+	height: 425px;}
+	.container{
+	height: 730px;}
+	.col{
+	padding: 10px 0 10px 0;
+	}
+}
+
+@media (min-width: 651px) and (max-width: 900px){
+	.yo-cv{
+	padding: 20px 3px;}
+	.banner{
+	height: 420px;}
+	.principal{
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;	}
+	.container{
+	height: 1130px;}
+	section{
+	width: 100%;
+	padding: 30px 0 0 0;	}
+	section div{
+	padding-bottom: 0 !important;
+	}
+}
+
+@media (min-width: 495px) and (max-width: 650px){
+	.izquierda, .derecha{
+	width:100%;	}
+	.yo-cv{
+	padding: 10px 10px 0 60px;
+	}
+	.banner{
+	height: 630px;	}
+	.head{
+	padding: 20px 10px;
+	text-align: center;
+	}
+	.principal{
+	width: 100%;
+	padding: 0;	}
+	.container{
+	height: 1200px;	}
+	section{
+		width:100%;
+		padding: 15px 0px;	}
+	section div{
+		padding-bottom: 0 !important;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 494px){
+	.izquierda, .derecha{
+	width:100%;	}
+	.yo-cv{
+	padding: 5px;
+	}
+	.banner{
+	height: 680px;	}
+	.head{
+	padding: 20px 10px;
+	text-align: center;
+	}
+	.principal{
+	width: 100%;
+	padding: 0;	}
+	.container{
+	height: 1400px;	}
+	section{
+		width:100%;
+		padding: 15px 0px;	}
+	section div{
+		padding-bottom: 0 !important;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 400px){
+	.banner{
+	height: 510px;}
+	.yo-cv{
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;	}
+	.izquierda, .derecha{
+	width: 100%;}
+	.head{
+	padding: 0 10px;
+	text-align: center;}
+	.head .data:before{
+	font-size: 30px;}
+	.principal{
+	width: 100%;
+	padding: 0}
+	section{
+	width: 100%;
+	padding: 0;}
+	.grid-row {
+    display: block;
+    width: 100%;
+    margin:0;}
+	.container{
+	text-align: center;
+	height: 1520px;}
+    .col {
+    display: block;
+    width: 100% !important;
+	padding: 10px 0 2px 0; }
+	.habilidades{
+	display: none;
+	}
+}
